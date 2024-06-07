@@ -1,0 +1,17 @@
+<p>tienda works!</p>
+
+<div *ngFor="let producto of productos">
+    <h3>
+        <a [title]="producto.nombre + ' Descripcion'">
+            {{producto.nombre}} 
+        </a>
+    </h3>
+    <h2>
+        
+    </h2>
+    <p *ngIf="producto.descripcion">
+        {{producto.descripcion}}
+    </p>
+    <button type="button" (click)="share(producto)">Comprar</button>
+</div>
+
